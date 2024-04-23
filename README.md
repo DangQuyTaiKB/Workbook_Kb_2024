@@ -13,3 +13,4 @@ Jako parametr vezme definici kontingenční tabulky, GQL dotaz, dotaz zrealizuje
 - Výsledek realizujte jako ipynb notebook (autentizace jménem a heslem, realizace aiohttp transformace response, vytvoření tabulky, vytvoření grafu).
 
 ## 23/4/2024: First commit
+- $uvicorn main:app --reload
