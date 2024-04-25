@@ -14,3 +14,6 @@ Jako parametr vezme definici kontingenční tabulky, GQL dotaz, dotaz zrealizuje
 
 ## 23/4/2024: First commit
 - $uvicorn main:app --reload
+
+## 25/4/2024: Second commit
+- @app.get: data, users, query
