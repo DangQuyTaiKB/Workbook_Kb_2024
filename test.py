@@ -8,7 +8,7 @@ def read_json(file_name):
 
 
 def main():
-    data = read_json('systemdata.json')
+    data = read_json('users_data.json')
     users_dat = data["data"]["userPage"]
     
 
