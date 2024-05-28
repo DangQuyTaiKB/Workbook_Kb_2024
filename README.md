@@ -17,3 +17,6 @@ Jako parametr vezme definici kontingenční tabulky, GQL dotaz, dotaz zrealizuje
 
 ## 25/4/2024: Second commit
 - @app.get: data, users, query
+
+## 28/5/2024: Third commit
+- send_payload function with token; @app.get("/download/{file_format}") 
