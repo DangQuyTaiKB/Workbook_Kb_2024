@@ -1,0 +1,274 @@
+{
+    "data": {
+        "result": [
+            {
+                "id": "2d9dc5ca-a4a2-11ed-b9df-0242ac120003",
+                "email": "john.newbie@world.com",
+                "name": "John",
+                "surname": "Newbie",
+                "presences": []
+            },
+            {
+                "id": "2d9dc868-a4a2-11ed-b9df-0242ac120003",
+                "email": "julia.newbie@world.com",
+                "name": "Julia",
+                "surname": "Newbie",
+                "presences": []
+            },
+            {
+                "id": "2d9dc9a8-a4a2-11ed-b9df-0242ac120003",
+                "email": "johnson.newbie@world.com",
+                "name": "Johnson",
+                "surname": "Newbie",
+                "presences": []
+            },
+            {
+                "id": "2d9dcbec-a4a2-11ed-b9df-0242ac120003",
+                "email": "jepeto.newbie@world.com",
+                "name": "Jepeto",
+                "surname": "Newbie",
+                "presences": []
+            },
+            {
+                "id": "89d1e724-ae0f-11ed-9bd8-0242ac110002",
+                "email": "jana.newbie@world.com",
+                "name": "Jana",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "89d1f34a-ae0f-11ed-9bd8-0242ac110002",
+                "email": "jolana.newbie@world.com",
+                "name": "Jolana",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "89d1f3cc-ae0f-11ed-9bd8-0242ac110002",
+                "email": "jitka.newbie@world.com",
+                "name": "Jitka",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "89d1f430-ae0f-11ed-9bd8-0242ac110002",
+                "email": "jaroslava.newbie@world.com",
+                "name": "Jaroslava",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "89d1f48a-ae0f-11ed-9bd8-0242ac110002",
+                "email": "lada.newbie@world.com",
+                "name": "Lada",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "89d1f4e4-ae0f-11ed-9bd8-0242ac110002",
+                "email": "ludmila.newbie@world.com",
+                "name": "Ludmila",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "89d1f534-ae0f-11ed-9bd8-0242ac110002",
+                "email": "lucie.newbie@world.com",
+                "name": "Lucie",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "89d1f58e-ae0f-11ed-9bd8-0242ac110002",
+                "email": "nola.newbie@world.com",
+                "name": "Nola",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "89d1f5de-ae0f-11ed-9bd8-0242ac110002",
+                "email": "neva.newbie@world.com",
+                "name": "Neva",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "89d1f638-ae0f-11ed-9bd8-0242ac110002",
+                "email": "nora.newbie@world.com",
+                "name": "Nora",
+                "surname": "Newbie",
+                "presences": [
+                    {
+                        "event": {
+                            "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+                            "name": "Zkouška",
+                            "startdate": "2023-04-19T08:00:00",
+                            "enddate": "2023-04-19T09:00:00",
+                            "eventType": {
+                                "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+                                "name": "Ostatní"
+                            }
+                        },
+                        "presenceType": {
+                            "id": "466398c6-a79c-11ed-b76e-0242ac110002",
+                            "name": "Přítomen"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

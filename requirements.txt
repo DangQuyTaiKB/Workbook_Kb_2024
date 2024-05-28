@@ -3,3 +3,4 @@ uvicorn
 json
 pandas
 aiohttp
+aiofiles
