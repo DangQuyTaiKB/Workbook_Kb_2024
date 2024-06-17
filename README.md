@@ -19,4 +19,7 @@ Jako parametr vezme definici kontingenční tabulky, GQL dotaz, dotaz zrealizuje
 - @app.get: data, users, query
 
 ## 28/5/2024: Third commit
-- send_payload function with token; @app.get("/download/{file_format}") 
+- send_payload function with token; @app.get("/download/{file_format}")
+
+## 17/6/2024: Fourth commit
+- os.remove(filename), unique filename
