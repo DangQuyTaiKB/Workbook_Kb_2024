@@ -32,7 +32,8 @@ services:
     depends_on:
       - postgres_credentials
 
-  #          {"name": "projects", "url": "http://gql_projects:8000/gql"}
+
+#          {"name": "projects", "url": "http://gql_projects:8000/gql"}
 
   apollo:
     image: hrbolek/apollo_federation
@@ -63,8 +64,7 @@ services:
       start_period: 60s
       timeout: 10s
     restart: on-failure:3 # nedojde k restartu pokud je kontejner "unhealthy", maximalne 3 pokusy
-    ports:
-      #v deploymentu by nebylo zadne mapovani portu
+    ports: #v deploymentu by nebylo zadne mapovani portu
       # vnejsi port : port, kde sluzbu poskytuje kontejner
       - 33000:3000
     depends_on:
@@ -160,7 +160,7 @@ services:
       - postgres_gql
 
   gql_facilities:
-    image: hrbolek/gql_facilities
+    image: hrbolek/gql_facilities 
     environment:
       # link na db mimo stack
       # - POSTGRES_HOST=host.docker.internal:5432
@@ -320,6 +320,7 @@ services:
     depends_on:
       - postgres_gql
 
+
   gql_surveys:
     image: hrbolek/gql_surveys
     environment:
@@ -355,7 +356,7 @@ services:
       - POSTGRES_PASSWORD=example
       - POSTGRES_DB=data
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready" ]
+      test: ["CMD-SHELL", "pg_isready"]
       interval: 60s
       timeout: 10s
       retries: 5
@@ -371,7 +372,7 @@ services:
       - POSTGRES_PASSWORD=example
       - POSTGRES_DB=data
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready" ]
+      test: ["CMD-SHELL", "pg_isready"]
       interval: 60s
       timeout: 10s
       retries: 5
@@ -385,19 +386,13 @@ services:
       - PGADMIN_DEFAULT_EMAIL=anoyne@anywhere.com
       - PGADMIN_DEFAULT_PASSWORD=example
     healthcheck:
-      test:
-        [
-          "CMD",
-          "wget",
-          "-O",
-          "-",
-          "http://localhost:80/misc/ping"
-        ]
+      test: ["CMD", "wget", "-O", "-", "http://localhost:80/misc/ping"]
       interval: 60s
       timeout: 10s
       retries: 5
     ports:
       - 31122:80
+
   # prometheus:
   #   image: prom/prometheus
   #   restart: always

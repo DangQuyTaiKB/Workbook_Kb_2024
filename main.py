@@ -77,21 +77,51 @@ import aiofiles
 import pandas as pd
 from fastapi.responses import FileResponse
 
+@app.get("/download")
+# The user can click on the button then go to the download/{file_format} endpoint
+async def info():
+    return {"message": "In fontend we will create csv and xlsx buttons to download the file. The user can click on the button then go to the download/{file_format} endpoint"}
 
+
+from datetime import datetime
+from fastapi import HTTPException, BackgroundTasks
+import os
+
+def remove_file(file_name: str):
+    os.remove(file_name)
 
 @app.get("/download/{file_format}")
-async def download(file_format: str):
+async def download(file_format: str, background_tasks: BackgroundTasks):
+    # Validate file format
+    valid_formats = ['csv', 'xlsx', 'xls']
+    if file_format not in valid_formats:
+        raise HTTPException(status_code=400, detail=f"Invalid file format. Valid formats are {', '.join(valid_formats)}")
+
     df = await fullPipe()
 
-    file_name = 'table'
-    file_name = f'{file_name}.{file_format}'
+    # Use the current time to create a unique file name
+    file_name = f'table_{datetime.now().strftime("%Y%m%d%H%M%S")}.{file_format}'
 
-    if file_format == 'csv':
-        df.to_csv(file_name, index=False, encoding='utf-8')
-        return FileResponse(file_name, media_type='text/csv', filename=file_name)
-    elif file_format in ['xlsx', 'xls']:
-        # df.to_excel(file_name, index=False, encoding='utf-8')
-        df.to_excel(file_name, index=False)
-        return FileResponse(file_name, media_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', filename=file_name)
-    else:
-        return {"error": "Invalid file format"}
+    try:
+        if file_format == 'csv':
+            df.to_csv(file_name, index=False, encoding='utf-8')
+            response = FileResponse(file_name, media_type='text/csv', filename=file_name)
+        elif file_format in ['xlsx', 'xls']:
+            df.to_excel(file_name, index=False)
+            response = FileResponse(file_name, media_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', filename=file_name)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="An error occurred while creating the file.")
+
+    # Schedule the file to be deleted after the response is sent
+    background_tasks.add_task(remove_file, file_name)
+
+    return response
+
+# create sunburst chart
+@app.get("/sunburst")
+async def sunburst():
+    df = await fullPipe()
+    df = df.fillna('NA')
+    df = df.to_dict(orient='records')
+    return df
+
